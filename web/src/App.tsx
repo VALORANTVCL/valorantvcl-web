@@ -1,10 +1,13 @@
 import React from 'react';
+import './css/App.css'
+
+//components
 import Login from './components/Login';
 
 function App() {
   return (
-    <div>
-      <h1>VALORANT VCL</h1>
+    <div className='content'>
+      <Login/>
     </div>
   );
 }

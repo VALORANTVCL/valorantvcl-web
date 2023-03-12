@@ -27,6 +27,18 @@
     flex-direction: column;
 }
 
+.background-right > img, .background-right{
+    width: 100%;
+}
+
+.right{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: #050425;
+}
+
 #welcome-text{
     position: relative;
 }

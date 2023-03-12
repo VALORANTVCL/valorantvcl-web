@@ -1,0 +1,65 @@
+.main-content{
+    display: flex;
+}
+
+.background-content {
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    background-color: #00FFB0;
+    opacity: 100%;
+    position:absolute;
+}
+
+.background-content > img {
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    object-fit: contain;
+}
+
+.left{
+    display: flex;
+    width: 30%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-text{
+    position: relative;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.login-form-input{
+    margin-bottom: 20px;
+}
+
+
+
+/* Changing Materialize css */
+
+.btn {
+    background-color: #050425;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-form-input > input{
+    border-bottom: 3px solid #050425 !important;
+    border-radius: 10px !important;
+}
+
+label{
+    font-size: 16px;
+    color: #050425;
+    font-weight: bold;
+}

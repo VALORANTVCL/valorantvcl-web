@@ -53,6 +53,14 @@
     font-weight: bold;
 }
 
+.btn:hover{
+    background-color: #050425;
+}
+
+.btn:active, .btn:focus{
+    background-color: #050425;
+}
+
 .login-form-input > input{
     border-bottom: 3px solid #050425 !important;
     border-radius: 10px !important;

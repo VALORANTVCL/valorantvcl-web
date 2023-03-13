@@ -68,6 +68,9 @@
 .btn:hover{
     background-color: #050425;
 }
+.labelPass:hover{
+    color: #ffffff;
+}
 
 .btn:active, .btn:focus{
     background-color: #050425;

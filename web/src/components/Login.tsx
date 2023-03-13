@@ -8,7 +8,12 @@ let Login = () => {
     let msg = "";
     const [loginDefault, newValueLogin] = useState<string>("");
     const [passDefault, newValuePass] = useState<string>("");
+    const [showPass, setShowPass] = useState<boolean>(false);
     const emails = ['contato.diogodev7@gmail.com', 'luandunaas@gmail.com'];
+
+    const viewPassword = () => {
+        setShowPass(!showPass);
+    }
 
     const validateEmail = () => {
         if(!emails.includes(loginDefault)){
@@ -34,7 +39,10 @@ let Login = () => {
 
                     <div className='login-form-input'>
                         <label htmlFor="password">Password</label>
-                        <input type="password" name="password" id="input1" value={passDefault} onChange={e => newValuePass(e.target.value)}/>
+                        <input type={showPass ? "text" : "password"} name="password" id="input1" value={passDefault} onChange={e => newValuePass(e.target.value)}/>
+                        <label onClick={viewPassword} className="waves-effect labelPass">
+                            {showPass ? "Hide Password" : "Show Password"}
+                        </label>
                     </div>
                     <button className='waves-effect waves-light btn' onClick={validateEmail}>Sign In</button>
                 </div>

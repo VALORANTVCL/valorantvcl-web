@@ -1,6 +1,12 @@
-*{
+* {
   padding: 0;
   margin: 0;
+}
+
+/* removing edge eye icon from password inputs */
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
 }
 
 body {

@@ -68,21 +68,52 @@
 .btn:hover{
     background-color: #050425;
 }
-.labelPass:hover{
+.labelPass:hover, #pass-visibility-icon:hover{
     color: #ffffff;
+    cursor: pointer;
+    /* transition: color .3s; */
 }
+
+
 
 .btn:active, .btn:focus{
     background-color: #050425;
 }
 
-.login-form-input > input{
+.login-form-input  input{
     border-bottom: 3px solid #050425 !important;
-    border-radius: 10px !important;
+    /* border-radius: 10px !important; */
 }
 
 label{
     font-size: 16px;
     color: #050425;
     font-weight: bold;
+}
+
+.form_input{
+    display: flex;
+}
+
+#pass-visibility-icon{
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #050425 !important;;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    /* font-size: 16px; */
+    margin: 0 0 8px 0;
+    padding: 0;
+    /* box-shadow: none; */
+    box-sizing: content-box;
+
+    transition: color .3s;
+}
+
+.login-form-input  input:focus, #pass-visibility-icon:focus{
+    border-bottom: 3px solid #050425 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
